@@ -1,3 +1,4 @@
+
 # 🌤 Weather App
 
 A dynamic JavaScript Weather App using **Open-Meteo free API**  
@@ -22,3 +23,7 @@ https://YOUR_USERNAME.github.io/weather-app/
 1. Open the app in browser
 2. Enter a city name
 3. Click "Get Weather" → See current weather with icon
+
+# weather-app
+Dynamic Weather App using Open-Meteo API – Portfolio Project
+>>>>>>> cfebba97483b025ab9986e543d4102f177096bfb
