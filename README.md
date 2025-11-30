@@ -13,7 +13,7 @@ Supports dynamic city search, weather icons & live data.
 - Responsive & clean UI
 
 ## Live Demo
-https://YOUR_USERNAME.github.io/weather-app/
+https://saad-innovation.github.io/weather-app/
 
 ## Technologies
 - HTML, CSS, JavaScript
