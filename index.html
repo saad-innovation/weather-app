@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport tag mobile responsiveness k liye bohat zaroori hy -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Weather App</title>
     <link rel="stylesheet" href="style.css">
@@ -11,7 +10,6 @@
     <div class="container">
         <h1>🌤️ Weather App</h1>
         
-        <!-- CSS flexbox k liye input aur button ko wrapper mai dala hy -->
         <div class="search-box">
             <input 
                 type="text" 
@@ -20,15 +18,20 @@
                 aria-label="City Name"
                 autocomplete="off"
             >
-            <button onclick="getWeather()" id="searchBtn">
+            <!-- Note: Yahan se onclick hata diya hy kyunke pichli JS mai humne Event Listener laga diya tha -->
+            <button id="searchBtn">
                 Search
             </button>
         </div>
 
-        <!-- aria-live tag screen readers ko update batata hy (Accessibility) -->
         <div id="loading" aria-live="polite">Fetching weather...</div>
         <div id="result" aria-live="polite">
-            <!-- Javascript yahan data inject karega -->
+            <!-- Javascript yahan weather data inject karega -->
+        </div>
+        
+        <!-- Yahan apka signature add kiya gaya hy -->
+        <div class="creator-tag">
+            Developed by <span>Saad Ali</span>
         </div>
     </div>
 
