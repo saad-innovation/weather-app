@@ -130,3 +130,27 @@ button:active {
   50% { opacity: 1; }
   100% { opacity: 0.6; }
 }
+
+/* Creator Signature Styling */
+.creator-tag {
+  margin-top: 30px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  /* Ek halki si line tag ko upar waly content se separate karegi */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+  padding-top: 15px;
+}
+
+.creator-tag span {
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Jab koi apke naam par mouse laye to halka sa glow kare */
+.creator-tag span:hover {
+  color: #a5b4fc;
+  text-shadow: 0 0 8px rgba(165, 180, 252, 0.5);
+  cursor: pointer;
+}
