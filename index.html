@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weather App</title>
+    <!-- Viewport tag mobile responsiveness k liye bohat zaroori hy -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>🌤️ Weather App</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button onclick="getWeather()">Get Weather</button>
+        
+        <!-- CSS flexbox k liye input aur button ko wrapper mai dala hy -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name..." 
+                aria-label="City Name"
+                autocomplete="off"
+            >
+            <button onclick="getWeather()" id="searchBtn">
+                Search
+            </button>
+        </div>
 
-        <div id="loading">Loading...</div>
-        <div id="result"></div>
+        <!-- aria-live tag screen readers ko update batata hy (Accessibility) -->
+        <div id="loading" aria-live="polite">Fetching weather...</div>
+        <div id="result" aria-live="polite">
+            <!-- Javascript yahan data inject karega -->
+        </div>
     </div>
 
     <script src="script.js"></script>
